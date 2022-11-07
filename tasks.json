@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-normal",
+            "type": "shell",
+            "command": "/home/joao/samp/compiler/pawncc",
+            "args": [
+                "${workspaceFolder}/gamemodes/gm.pwn",
+                "\"-i/home/joao/samp/compiler/include\"",
+                "\"-Dgamemodes\"",
+                "\"-;+\"",
+                "\"-(+\"",
+                "\"-d3\"",
+                "\"-Z\""
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "isBackground": false,
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            },
+            "problemMatcher": "$pawncc"
+        }
+    ]
+}
